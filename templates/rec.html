@@ -1,0 +1,11 @@
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='/styles.css') }}" />
+
+
+<p>
+	{% for key, value in form_data.items(): %}
+	<h2 color="pink">{{ key }}</h2>
+	<h3>{{value}}</h3>
+	{% endfor %}
+
+
+</p>
